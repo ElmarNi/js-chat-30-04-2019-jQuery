@@ -1,0 +1,94 @@
+p {
+    margin: 0 15px;
+    color: white;
+    font-size: 18px;
+}
+i {
+    font-size: 20px;
+    color: white;
+}
+.extendable-chat i:last-child{
+    transform: rotate(45deg);
+    transition: all .4s ease-in;
+}
+.extendable-chat{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center
+}
+.head{
+    border-radius: 10px 10px 0 0;
+}
+.main-chat{
+    display: none;
+}
+.main-chat .title{
+    height: 450px;
+    border-radius: 0 0 10px 10px;
+    overflow-y: auto;
+}
+.reply{
+    padding: 10px 0;
+    border-bottom: 1px solid #50585f;
+    color: white;
+    margin: 10px 0;
+    transition: all .4s ease;
+}
+.reply:hover{
+    background: rgb(77, 89, 99);
+}
+.selected{
+    background: rgb(77, 89, 99);
+    border-radius: 10px
+}
+.reply:first-child:hover{
+    background: transparent;
+}
+.reply img{
+    border-radius: 10px;
+    width: 60px;
+    margin:0 15px;
+    cursor: pointer
+}
+.inputs{
+    border-radius: 10px;
+}
+
+input{
+    outline: none;
+    color: white;
+}
+.delete{
+    cursor: pointer;
+    display: none;
+}
+.delete p{
+    display: inline;
+}
+.send{
+    cursor: pointer;
+    transition: all .3s;
+}
+.send:hover{
+    color: aqua;
+}
+.delete i{
+    transition: all .3s ease;
+}
+.delete:hover i{
+    color: teal;
+}
+.close-icon{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.close-icon:hover{
+    color: red
+}
